@@ -6,72 +6,133 @@
 <style>
 	*{
 		box-sizing: border-box;
+		font-family: Arial;
 	}
 	header {
 		background: url(beauty2.jpg) no-repeat center #FAEAEC;
 		width: 1200px;
 		height: 330px;
-		margin: 20px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
 		padding: 0px;
 		border: 0px;
 	}
 	header p {
 		display: block;
-		margin: 0px 0px 260px 0px;
-		color: black;
+		margin: 0px 0px 270px 0px;
+		color: white;
 		font-size: 32px;
 		font-style: italic;
+		text-shadow: 1px 1px 10px black;
 		position: relative;
-		top:200px;
+		top:260px;
 		left: 150px;
 	}
 	header li {list-style: none;}
 	a:link, a:visited {
 		text-decoration: none;
-		width: 150px;
-		border: 1px solid black;
-		color: #FFFF00;
-		font-size: 24px;
-		font-weight: normal;
+		margin: 0px 20px 0px 0px;
+		color: black;
+		font-size: 16px;
+		font-weight: bold;
 		text-align: center;
 		float: right;
 		position: relative;
-		right: 124px;
+		right: 114px;
 	}
 	a:hover, a:active {
-		font-weight: bold;
+		background-color: #FAEAEC;
+		box-shadow: 1px 1px 30px black;
 	}
 	body {
 		background-color: #FAEAEC;
+		width: 1200px;
 	}
+
+	div {
+		line-height: 1.2;
+		background-image: -webkit-linear-gradient(rgba(0,0,0,.2) 1px, transparent 1px);
+		background-image: -moz-linear-gradient(rgba(0,0,0,.2) 1px, transparent 1px);
+		background-image: linear-gradient(rgba(0,0,0,.2) 1px, transparent 1px);
+		background-size: 100% 1.2em; /* 1.2em to match the line-height */
+		background-position: 0 1em; /* Adjust accordingly at the beginning */
+  		background-origin: content-box;
+  		/*font-size: 150%;
+  		padding: 1em auto; /* only works with background-origin: content-box */
+  		margin: 0 auto;
+  		width: 40%;
+	}
+
 	body .newfeed {
-		width: 980px;
-		height: 700px;
-		margin: 20px 0px 0px 10px;
-		border: 2px solid yellow;
+		width: 900px;
+		height: 900px;
+		margin: 20px 0px 0px 30px;
 		border-radius: 50px;
+		box-shadow: 1px 1px 20px gray;
 		background: url(newfeed.jpeg) no-repeat bottom;
 		float: left;
 		
 	}
+	#n1 {
+		position: relative;
+		top:20px; left: 20px; right: 10px;
+		width: 800px;
+		height: 150px;
+		text-align: left;
+		border-bottom: 1px solid gray;
+		
+	}
+
+	#n2 {
+		position: relative;
+		top:20px; left: 20px; right: 20px;
+		width: 800px;
+		height: 150px;
+		text-align: left;
+		border-bottom: 1px solid gray;
+	}
+
 	body .citation {
 		width: 250px;
 		height: 300px;
-		margin: 20px 10px 1px 0px;
-		border: 2px solid yellow;
+		margin: 20px 10px 0px 0px;
+		border: 1px solid gray;
+		padding: 0px;
 		border-radius: 10px;
 		float: right;
 	}
 	
+	#c1 {
+		width: 250px;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+
 	body .related {
 		width: 250px;
 		height: 300px;
-		margin: 20px 10px 1px 0px;
-		border: 2px solid yellow;
+		margin: 20px 10px 0px 0px;
+		padding: 0px;
+		border: 1px solid gray;
 		border-radius: 10px;
 		float: right;
 	}
-
+	#r1 {
+		width: 250px;
+		text-align: center;
+		text-decoration: underline;
+	}
+	#cp1 {
+		position: relative;
+		left: 5px; right: 5px;
+		text-align: left;
+	}
+	#cp2 {
+		position: relative;
+		left: 5px; right: 5px;
+		text-align: right;
+		font-weight: bold;
+	}
 
 
 
@@ -84,22 +145,25 @@
 	<li><a href="mon_metier/mon_metier.html"> Mon Métier </a></li>
 	<li><a href="ma_passion/ma_passion.html"> Ma Passion </a></li>
 	<li><a href="ma_vie/mavie.html"> Ma Vie </a></li>
-	<li><a href="galerie.html"> Nouvelles </a> </li>
+	<li><a href="galerie.html"> Actualité </a> </li>
 	
 </header>
 <body>
 <div class="newfeed">
-<p > Something here </p>
+<h2 id="n1"> Article 1 </h2>
+<h2 id="n2"> Article 2 </h2>
 
 </div>
 
 <div class="citation">
-<p> quelques choses belles </p>
+<h3 id="c1"> Belle phrase du jour </h3>
+<p id="cp1">&quot; La musique. C'est un cadeau de la vie. Ça existe pour consoler. Pour récompenser. Ça aide à vivre.&quot;</p>
+<p id="cp2">Michel Tremblay</p>
 
 </div>
 
 <div class="related">
-<p> some related posts</p>
+<h3 id="r1"> Les + populaires </h3>
 
 </div>
 
